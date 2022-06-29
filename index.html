@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HOME</title>
+  <link rel="stylesheet" href="assests/css/main.css">
+  <link rel="stylesheet" href="assests/css/font.css">
+  <link rel="stylesheet" href="assests/css/skin-colors.css">
+  <link rel="stylesheet" href="assests/css/mobile-response.css">
+  <link rel="stylesheet" href="assests/css/tablet-response.css">
+</head>
+<body>
+<div class="main-container">
+ <header>
+  <div class="nav-menu-button" onclick="openMenu()">
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill=" var(--black-color)" class="bi bi-list" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
+ 
+  </div>
+  <div class="logo">TEE</div>
+  <div class="nav-links">
+    <a href="hi.html">
+      <li>Accademic</li>
+    </a>
+    <a href="">
+      <li>Creative Question</li>
+    </a>
+    <a href="">
+      <li>MCQ</li>
+    </a>
+    <a href="">
+      <li>Job Admission</li>
+    </a>
+  </div>
+  <div class="class-indicator class-indicator-nav">
+    <div class="class-indicator-box" onclick="openClassIndicatorList()">
+      Class &nbsp;
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="15" height="15">
+<path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+    </div>
+    <div class="class-indicator-list">
+      <a href="">
+        <li>
+          <div class="class-indicator-neumaric">5</div>
+          <div class="class-indicator-word">Five</div>
+        </li>
+      </a>
+      <a href="">
+        <li>
+          <div class="class-indicator-neumaric">6</div>
+          <div class="class-indicator-word">Six</div>
+        </li>
+      </a>
+      <a href="yo.html">
+        <li>
+          <div class="class-indicator-neumaric">7</div>
+          <div class="class-indicator-word">Seven</div>
+        </li>
+      </a>
+      <a href="">
+        <li>
+          <div class="class-indicator-neumaric">8</div>
+          <div class="class-indicator-word">Eight</div>
+        </li>
+      </a>
+      <a href="">
+        <li>
+          <div class="class-indicator-neumaric">9</div>
+          <div class="class-indicator-word">Nine</div>
+        </li>
+      </a>
+      <a href="">
+        <li>
+          <div class="class-indicator-neumaric">10</div>
+          <div class="class-indicator-word">Ten</div>
+        </li>
+      </a>
+    </div>
+  </div>
+ </header>
+ <div class="main-content">
+   <div class="home-content-header">
+     <div class="col-1 anim-fade">
+    Learn yourself make your life
+     </div>
+     <div class="col-2 anim-fade">
+    <img src="assests/images/home_study.jpg" alt=""> 
+     </div>
+   </div>
+ </div>
+</div>
+<script src="assests/js/main.js"></script>
+<script>
+ function openClassIndicatorList(){
+    document.querySelector('.class-indicator-list').classList.toggle('open-class-indicator-list')
+   if(document.querySelector('.nav-links').classList.contains('open-menu')){
+     document.querySelector('.nav-links').classList.remove('open-menu')
+   }
+ }
+ function openMenu(){
+   document.querySelector('.nav-links').classList.toggle('open-menu');
+   if(document.querySelector('.class-indicator-list').classList.contains('open-class-indicator-list')){
+     document.querySelector('.class-indicator-list').classList.remove('open-class-indicator-list')
+   }
+ }
+</script>
+</body>
+</html>

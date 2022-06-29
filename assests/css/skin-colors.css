@@ -1,0 +1,9 @@
+:root{
+  --bg-color:#FFFFFF;
+  --border-color:#E7E7E7;
+  --white-color:#FFFFFF;
+  --black-color:#000000;
+  --mid-white-color:#D6D6D6;
+  --red-color:#FF3030;
+  --border-bottom-shadow: 0 1px 1px  var(--mid-white-color);
+}
