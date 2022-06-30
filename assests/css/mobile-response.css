@@ -35,16 +35,18 @@ header .logo{
   flex-direction: column;
   justify-content: center;
   padding: 5px 18px;
+  
 }
 .home-content-header .col-1{
   flex-basis: 100%;
   order: 2;
-  animation-delay: 0.5s
 }
 .home-content-header .col-2{
   flex-basis: 100%;
   
 }
-
+.home-content-header p{
+  margin:15px 0 0 0;
+}
 
 }

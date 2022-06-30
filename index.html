@@ -22,7 +22,7 @@
   </div>
   <div class="logo">TEE</div>
   <div class="nav-links">
-    <a href="hi.html">
+    <a href="">
       <li>Accademic</li>
     </a>
     <a href="">
@@ -68,14 +68,14 @@
       </a>
       <a href="">
         <li>
-          <div class="class-indicator-neumaric">9</div>
-          <div class="class-indicator-word">Nine</div>
+          <div class="class-indicator-neumaric">S</div>
+          <div class="class-indicator-word">SSC</div>
         </li>
       </a>
       <a href="">
         <li>
-          <div class="class-indicator-neumaric">10</div>
-          <div class="class-indicator-word">Ten</div>
+          <div class="class-indicator-neumaric">H</div>
+          <div class="class-indicator-word">HSC</div>
         </li>
       </a>
     </div>
@@ -85,26 +85,35 @@
    <div class="home-content-header">
      <div class="col-1 anim-fade">
     Learn yourself make your life
+    <p><button class="anim-fade cus-point">Get Started</button></p>
      </div>
      <div class="col-2 anim-fade">
-    <img src="assests/images/home_study.jpg" alt=""> 
+    <img  src="assests/images/home_study.jpg" alt=""> 
      </div>
    </div>
  </div>
 </div>
 <script src="assests/js/main.js"></script>
 <script>
+var ClassLists = document.querySelector('.class-indicator-list');
+var menu = document.querySelector('.nav-links');
+var mainContent = document.querySelector('.main-content')
  function openClassIndicatorList(){
-    document.querySelector('.class-indicator-list').classList.toggle('open-class-indicator-list')
-   if(document.querySelector('.nav-links').classList.contains('open-menu')){
-     document.querySelector('.nav-links').classList.remove('open-menu')
+    ClassLists.classList.toggle('open-class-indicator-list')
+   if(menu.classList.contains('open-menu')){
+     menu.classList.remove('open-menu')
    }
  }
  function openMenu(){
-   document.querySelector('.nav-links').classList.toggle('open-menu');
-   if(document.querySelector('.class-indicator-list').classList.contains('open-class-indicator-list')){
-     document.querySelector('.class-indicator-list').classList.remove('open-class-indicator-list')
+   menu.classList.toggle('open-menu');
+   if(ClassLists.classList.contains('open-class-indicator-list')){
+    ClassLists.classList.remove('open-class-indicator-list')
    }
+ }
+ mainContent.onclick = ()=>{
+  ClassLists.classList.remove('open-class-indicator-list');
+  menu.classList.remove('open-menu')
+
  }
 </script>
 </body>
