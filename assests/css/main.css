@@ -38,6 +38,9 @@ header{
   justify-content: space-between;
   padding: 5px 30px;
   font-weight: 500;
+  position: fixed;
+  z-index: 100;
+  top: 0;
 }
 header .logo{
   font-size: 25px;
