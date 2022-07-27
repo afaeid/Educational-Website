@@ -192,6 +192,44 @@ color: var(--black-color);
 border:1px solid var(--black-color); 
    border-radius: 20px
 }
+.page-bio{
+  width: 100%;
+  min-height: 400px;
+  background: var(--bg-color);
+}
+.page-title{
+  width: 100%;
+  min-height: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: var(--red-color);
+  font-weight: 400;
+/*   text-decoration: underline;
+text-decoration-color: green ; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .anim-fade{
   animation: fade 0.5s linear forwards;
   transform: translateY(30px);
